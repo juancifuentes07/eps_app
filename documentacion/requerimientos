@@ -1,0 +1,23 @@
+Requerimientos Funcionales:
+
+1. En la app, todo médico debe autenticarse con número de identificación y contraseña, en caso de no existir, deberá permitir el registro con los datos:
+- Num de identificación
+- Nombres y apellidos
+- Barrio
+- Teléfono
+- Fecha de nacimiento
+- Especialidad (Sólo 1 por médico)
+
+2. En el proyecto, deben manejarse mínimo 5 especialidades, para asignarlas al médico experto.
+
+3. Al médico se le tiene que permitir abir el listado de las citas que tiene asignadas por día, donde debe visualizar:
+    La identificación, el nombre, apellido y la edad del paciente.
+
+4. El médico podrá seleccionar un paciente para su atención, generando la descripción de la cita y la fórmuls médica ó los exámenes recomendados,
+que deberán llegar vía correo electrónico al paciente. Deberá dar por cerrada la cita al finalizar la atención.
+
+5. Un médico podrá cerrar una cita con observaciones de inasistencia cuando un paciente no se presente.
+
+6. El médico visualizará el listado de citas atendidas y el número de inasistencias, seleccionando una fecha particular.
+
+7. La información deberá persistirse en archivos binarios. Utilizando la librería compartida.
