@@ -1,5 +1,6 @@
 package models;
 
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -11,7 +12,8 @@ public class Cita implements Serializable {
     private String formula;           // Fórmula médica o exámenes
     private String observacion;       // Nota adicional (ej: paciente no asistió)
     private Paciente paciente;        // Relación con paciente
-    private Medico medico;            // Relación con médico
+    private Medico medico;
+    // Relación con médico
 
     // Constructor
     public Cita(int idCita, Date fechaHora, Paciente paciente, Medico medico) {

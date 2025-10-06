@@ -8,15 +8,17 @@ import java.util.List;
 public class Medico extends Persona implements Serializable {
     private Especialidad especialidad;
     private String contrasena;
+    private String correo;
     private List<Cita> citasAsignadas;
 
     // Constructor
     public Medico(int numIdentificacion, String nombre, String apellido,
                   String barrio, String telefono, Date fechaNacimiento,
-                  Especialidad especialidad, String contrasena) {
+                  Especialidad especialidad, String correo, String contrasena) {
         super(numIdentificacion, nombre, apellido, barrio, telefono, fechaNacimiento);
         this.especialidad = especialidad;
         this.contrasena = contrasena;
+        this.correo = correo;
         this.citasAsignadas = new ArrayList<>();
     }
 
@@ -25,6 +27,8 @@ public class Medico extends Persona implements Serializable {
     public void modificarEspecialidad(Especialidad nuevaEspecialidad) { this.especialidad = nuevaEspecialidad; }
 
     public String obtenerContrasena() { return contrasena; }
+    public String obtenerCorreo() { return correo; }
+    public void modificarCorreo(String nuevoCorreo) { this.correo = nuevoCorreo; }
     public void modificarContrasena(String nuevaContrasena) { this.contrasena = nuevaContrasena; }
 
     public void asignarCita(Cita cita) {

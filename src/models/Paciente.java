@@ -3,6 +3,7 @@ package models;
 import java.util.Date;
 
 public class Paciente extends Persona {
+    private String contrasena;
     private String correo;
 
     // Constructor
@@ -13,12 +14,14 @@ public class Paciente extends Persona {
     }
 
     // Métodos propios de Paciente
-    public String obtenerCorreo() {
-        return correo;
-    }
+    public String obtenerCorreo() { return correo; }
 
     public void modificarCorreo(String nuevoCorreo) {
         this.correo = nuevoCorreo;
+    }
+
+    public String obtenerContrasena() {
+        return contrasena;
     }
 
     @Override
